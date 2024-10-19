@@ -1,0 +1,11 @@
+to refresh nodemon  ,watch,supervisor
+ 
+ host : railway  render
+
+// hitesh complette 1.10
+// anurag begins    1.10
+
+explore :miro
+another node js framework is koa
+
+ 

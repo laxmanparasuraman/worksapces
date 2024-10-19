@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <!--  begin 1.45 -->
+    <h1>hello t delete </h1>
+
+     <ul>
+        <li> one delete</li>
+        <li> two delete</li>
+        <li> three delete</li>
+        <li> four delete</li>
+        <li> four delete</li>
+     </ul>
+ 
+
+<script>
+    const list=`
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+    <li>four 1</li>
+
+    `
+
+    let ul1=document.querySelector("ul")
+    //ul1.innerHTML=list;
+
+// adding using append
+
+ let title =document.createElement("h1");
+ title.className="title"
+ title.style.fontSize="25px";
+ title.textContent="hello js "
+   // title.innerHTML="laxman"
+   document.body.appendChild(title)//  h1 is child t body 
+   console.log(title)
+
+
+     const ul=document.querySelector("ul");
+     
+      const lists =document.querySelectorAll("li")
+      for(list of lists){
+
+        ul.removeChild(list)
+      }
+//  remove child ia not working check it now
+
+
+ //   even listner  - click , db click , mouse enter , change , key press , 
+
+                        
+
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <style>
+        .header{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <div class ="root">Not Used</div>
+    
+<!--   1 cdn of react 2 cdn of react dom 3 cdn of babel -->
+    <script
+     crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+    const home =document.querySelector(".root")
+   
+   
+  //  const homePage =<h1> Hello home homePage</h1>
+   
+    const homePage=(
+        <div>
+            <h1> hello div</h1>
+            <h2> hello h2</h2>
+        </div>
+    )
+    
+//ReactDOM.render(homePage,home)
+
+    const Navbar =(
+        <div style={{ color :"red"}}>
+            <p>Home</p>
+            <p>About Us</p>
+        </div>
+    )
+ const csss={ color:"blue"}
+    const Main=(
+        <div style ={csss}>
+           <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione corporis quos nihil nulla quas qui vero nobis ipsum aspernatur aliquam consectetur, iusto id ex! Nam, ea? Provident necessitatibus nihil aperiam?
+           Qui eius aut blanditiis, assumenda pariatur earum beatae dolores asperiores odit! Exercitationem qui commodi rerum praesentium minus repellat vel culpa deleniti excepturi? Unde illum quasi veritatis, repellat voluptatibus sed eum!
+           Molestiae facilis reprehenderit consectetur et pariatur veritatis ut quibusdam nobis beatae cupiditate atque repudiandae dolore animi libero culpa voluptatibus, sint aspernatur enim obcaecati eos. Maxime sed illum possimus corrupti dignissimos!
+           Molestias animi, eum quia similique pariatur labore sint dolores tenetur voluptates minus nobis, suscipit consequuntur quibusdam qui et consequatur placeat ea nulla! Inventore aperiam, tempore qui nemo excepturi ratione architecto.
+           Eligendi dolor adipisci explicabo hic accusamus officiis! Fuga deleniti possimus animi mollitia perferendis omnis voluptate voluptatibus harum doloremque tempore magnam, voluptates accusantium vel consequuntur eaque. Ipsa maiores sequi maxime cum.
+           Eaque, repudiandae eos nesciunt magnam consequatur culpa neque, perferendis, assumenda amet ipsam explicabo? Odio, doloremque aut culpa atque mollitia ab autem cupiditate eaque illum labore cumque voluptas, ad, dicta nihil?
+           Harum corporis aperiam sapiente tenetur fugiat maiores dignissimos? Mollitia modi, hic temporibus quo consectetur eius quas, voluptatibus molestiae at minima aliquid debitis officia rem laboriosam deserunt expedita veniam voluptatem necessitatibus.
+           Cumque consequatur officiis, inventore sapiente fugiat eligendi nostrum veniam, dolores exercitationem dolor aliquid illo a, quo assumenda quisquam dolorem omnis suscipit vel. Quibusdam voluptate, incidunt voluptatum iste ducimus voluptatem fuga.
+           Similique ab veniam, quam eligendi assumenda sed. Dolorum placeat minima aspernatur eum suscipit voluptate veritatis debitis rem repellendus deleniti perspiciatis inventore voluptas ullam, officia optio, distinctio veniam delectus nulla nesciunt.
+           Quos autem quibusdam fugiat iusto repudiandae, itaque laboriosam eaque rerum iure eius molestias aliquam, doloribus harum nemo, nam quam veniam? Inventore rem alias dolores eum aut. Vitae corrupti rerum iste.</p>  
+        </div>
+
+    )
+    const UserName="laxman Parasuraman"
+    const footer=(
+        <div className="header">
+            <p>{UserName}</p>
+            <br/>
+            <p>CopyRight 2024 Laxman Parasuramn</p>
+        </div>
+    )
+
+    const name=(// learn to use string liitenal consider the user name is ger from the bacend using fetch api
+        <div>
+             
+            <h1>{UserName}</h1>
+        </div>
+    )
+    const App=(
+            <div>
+                {Navbar}
+                {homePage}
+                {Main}
+                {footer}
+                {name}
+
+            </div>
+            )
+
+    
+    ReactDOM.render(App,home)
+
+</script>
+
+</body>
+</html>

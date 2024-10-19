@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="js">n hello Java Script</h1>
+     
+    <ul> 
+        <li> html</li>
+        <li>css</li>
+        <li>js</li>
+    </ul>
+    <ul>
+         <li class="tech">one</li>
+         <li class ="tech">two</li>
+         <li class ="tech">three</li>
+
+    </ul>
+
+    <!--  for query selector -->
+
+    <h1>helo java script  for query</h1>
+    <p>html</p>
+    <p class="cl1">css</p>
+    <p id ="id1">js</p>
+
+
+
+    <script>
+        // root
+        // console.log(document)
+        // console.log(window.document)
+        // console.log(document.documentElement)
+
+        // childre
+        // console.log(document.body.children)
+        console.log(document.body.firstChild);
+        console.log(document.body.firstElementChild)
+
+        /*
+        Finding the elemnt 
+          
+         how to target the h1   
+         document.getelemetbyid()
+
+                */
+               var value=  document.getElementById("js")
+               var value1=  document.getElementById("js").innerText
+               console.log(value)
+               let techValue=document.getElementsByClassName("tech")
+               console.log("tech value")
+               console.log(techValue)
+               console.log(techValue[0].innerText)
+               //  get by tag
+
+               let tagval=document.getElementsByTagName("h1")
+               console.log("tag name")
+               console.log(tagval[0])
+               console.log("tag name  inner text  ")
+               //console.log(tagval[0]).innerText
+
+               
+
+// query selctor   select  html by   id , class name 
+  console.log("document .Query selctor begins learns ")
+
+  let valueQuerySelctor=document.querySelector("p")
+  console.log(valueQuerySelctor)
+
+  
+  let valueQuerySelctorAll=document.querySelectorAll("p")
+  console.log(valueQuerySelctorAll[1])
+    
+  //  by tag name will return inthe ae=way of araay
+  //  query selctpr  selct html by tag name , clas id
+
+  
+  // wihtout .#  it become a tag name 
+
+  ///   query selctor al give nodelist
+
+  // change style colur of background
+  // 
+  document.body.style.background="brown";
+  // style is a objext and background is a property 
+
+// set attribute 
+valueQuerySelctorAll[0].setAttribute("id","js");
+value.classList.add("js","laxman","loki");
+
+
+
+
+valueQuerySelctorAll[1].textContent="leanring java script";
+
+
+
+    </script>
+</body>
+</html>
+
+
+

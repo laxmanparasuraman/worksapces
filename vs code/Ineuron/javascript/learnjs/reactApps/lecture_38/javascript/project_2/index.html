@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- reamining 45 minutes -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing game</title>
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Welcome to Number Guessing Game</h1>
+     <p class="message">message</p>
+
+     <form onsubmit="playgame(event)">
+        <input class="userInput" type="number" name="" id="">
+         <button> check ans</button>
+
+     </form>
+    </div>
+</body>
+
+<script>
+
+   let computerGuess =Math.floor(Math.random()*11)
+   let message=document.querySelector(".message")
+   let userInput=document.querySelector(".userInput") 
+   message.innerHTML="loi"                                                       
+
+  const playgame=(event)=>{
+    event.preventDefault()
+
+    if(computerGuess==userInput.value){
+
+        message.innerHTML="you are own"
+    }else if(computerGuess>userInput.value){
+        message.innerHTML="guess the greter number"
+
+    }else{
+        message.innerHTML="guess the smaller number"    
+    }
+    console.log(event.target)
+    console.log("inside")
+  }
+</script>
+
+
+</html>

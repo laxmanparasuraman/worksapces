@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React gpt</title>
+    <style>
+        .header {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="root">Not Used</div>
+    
+    <!-- React, React DOM, and Babel CDNs -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        // Selecting the root element
+        const home = document.querySelector(".root");
+
+        // Home Page JSX
+        const homePage = (
+            <div>
+                <h1>hello div</h1>
+                <h2>hello h2</h2>
+            </div>
+        );
+
+        // Navbar JSX
+        const Navbar = (
+            <div style={{ color: "red" }}>
+                <p>Home</p>
+                <p>About Us</p>
+            </div>
+        );
+
+        // Custom style object for Main
+        const csss = { color: "blue" };
+
+        // Main Content JSX
+        const Main = (
+            <div style={csss}>
+                <p>Lorem ipsum dolor sit amet...</p> <!-- Your long paragraph here -->
+            </div>
+        );
+
+        // UserName declaration (fetched from backend)
+        const UserName = "Laxman Parasuraman";
+
+        // Footer JSX
+        const footer = (
+            <div className="header">
+                <p>{UserName}</p>
+                <br />
+                <p>Copyright 2024 Laxman Parasuramn</p>
+            </div>
+        );
+
+        // Using string literals to display the name
+        const name = (
+            <div>
+                <h1>{UserName}</h1>
+            </div>
+        );
+
+        // The main app combining everything
+        const App = (
+            <div>
+                {Navbar}
+                {homePage}
+                {name} {/* Correct rendering of name */}
+                {Main}
+                {footer} {/* Correct rendering of footer */}
+            </div>
+        );
+
+        // Render the App
+        ReactDOM.render(App, home);
+    </script>
+
+</body>
+</html>

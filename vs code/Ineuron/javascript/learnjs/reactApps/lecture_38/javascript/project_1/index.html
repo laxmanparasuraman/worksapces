@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="root"> root</h1>
+    <div class ="main-div">
+        <div  class="accordion">
+            <h3>Heading</h3>
+            <p style="display: none;">i am  heading</p>
+
+        </div>
+    </div>
+
+    <script >
+        //src="./index.js"
+        const root=document.getElementById("root")
+      root.innerText="laxman dom manupulation check"
+          
+          let heading=document.querySelectorAll(".accordion h3")
+          console.log(heading)
+          heading.forEach((element)=>{
+            element.addEventListener("click",()=>{
+                let paragraph =element.nextElementSibling
+                if(paragraph.style.display==="none"){
+                    paragraph.style.display="block"
+                    console.log("if")
+                }else{
+                    paragraph.style.display="none"
+                    console.log("else")
+
+                }
+               
+                console.log(event.target)
+            })
+          })
+
+    </script>
+                  
+</body>
+</html>

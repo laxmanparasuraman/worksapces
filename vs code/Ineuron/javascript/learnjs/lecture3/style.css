@@ -1,0 +1,106 @@
+/* universal selctor */
+
+*{
+    background: color #4d4d4d;
+    color: #fff;
+}
+/* /individual selector */
+/* p will targetr all paragargh */
+p{
+    background-color: #4d4d4d;
+}
+
+
+/* class  and id */
+
+.warning{
+    background-color: #4d4d4d;
+    color: #4d4d4d;
+    padding: 0%;
+    border: blue;
+}
+
+
+/* and selector chained */
+
+
+
+/* combined selector */
+span,
+li {
+    background-attachment: fixed;
+    background-color: #4d4d4d;
+
+}
+
+/* inside an element */
+div ul li{
+background-color: #4d4d4d;
+}
+
+/* direct  child   */
+/*   div inside li are consider  and one more nested level canntod consider as sibliling
+ example div inside ul inside li cannot consider */
+div>li{
+    background-color: brown;
+}
+
+/* sibling ~ or + :   classname + type such as p  means in that class 1st line only and if ~  all line after   */
+
+.sibiling +p{
+    background-attachment: fixed;
+
+}
+/* pseudo selector    such as before and after  */
+.className::before{
+    content: "test";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #4d4d4d;
+}
+
+.className::after{
+
+}
+
+/* hover   is a mover like if touch any list elemnt it has an effect   */
+
+li:hover{
+    background-color: #4d4d4d;
+    padding: 5px;
+    border 2px scrollbar-width: ;
+
+}
+
+/* focus  if touch anythinh  like hover */
+input:focus{
+    background-attachment: fixed;
+}
+
+/* first child ,lAST child and nth chlid */
+li:first-child{
+    background-color: #4d4d4d;
+}
+
+li:last-child{
+    background-color: #4d4d4d;
+}
+
+li:nth-child(){
+    background-attachment: fixed;
+}
+
+
+/* custom attributes    we can gi a n attributes in p tag or anything mostly use in react*/
+
+[type=name ]{
+    background-attachment: fixed;
+}
+
+[lco code]{
+    background-attachment: fixed;
+}
+
+/*  postion     are four types     static    */
