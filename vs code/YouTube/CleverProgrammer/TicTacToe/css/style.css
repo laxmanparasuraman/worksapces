@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: blueviolet;
+
+}
+.wrapper{
+    max-width: 1440px;
+    height :800px;
+   /*  background-color:yellow    */ ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.restart{
+    background-color: #4CAF50;
+    height: 50px;
+    width: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.restart:hover{
+    margin-top: 30px;
+    background-color: blue;
+   
+    color: gold;
+}
+.header{
+    display: flex;
+    color:#9A9A9A;
+    font-size: 24px;
+}
+.game{
+    width: 500px;
+    height: 500px;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+   
+  grid-gap: 0px;
+    padding: 10px;
+    flex-grow: 1;
+    /* background-color: orange; */
+}
+.board-tile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    background-color: white;
+    color: red;
+    
+}
+
+.board-tile:not(:nth-child(3n)){
+    border-right: 3px solid  blue;
+}
+.board-tile:not(:nth-last-child(-n+3)){/* n-3 are same  */
+    border-bottom: 3px solid blue;
+}
+
+.header .player-o{
+    flex: 1;
+    border-bottom:  5px solid blue;
+    padding-bottom: 8px;
+}
+
+
+.header .player-x{
+    flex: 1;
+    border-bottom:  5px solid  blue;
+    padding-bottom: 8px;
+}
+
+.board-tile:hover{
+    background-color: #eee;
+}
+
+.board-tile.active{
+    background-color: #ddd;
+    color: black;
+}
+/*  */
+h1{
+    font-size: 70px;
+    font-weight: bold  ;
+}
+
+.player-x.active{
+    color: goldenrod;
+    border-color: gold;
+}
+
+.player-o.active{
+    color: goldenrod;
+    border-color: gold;
+}
+
+.tile-x{
+    color: gold;
+}
+.tile-o{
+    color: navy;
+}
+.title-winner{
+    
+}
+.title-winner span{
+    color: red;
+    color: #23ce6b;
+
+}

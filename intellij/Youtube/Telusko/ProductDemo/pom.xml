@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Define project version and packaging -->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.laxman</groupId> <!-- Your package name -->
+    <artifactId>your-project-name</artifactId> <!-- Your project name -->
+    <version>1.0-SNAPSHOT</version> <!-- Project version -->
+    <packaging>jar</packaging> <!-- Packaging type, can be jar or war etc. -->
+
+    <!-- Build settings -->
+    <build>
+        <plugins>
+            <!-- Add plugins here if needed -->
+        </plugins>
+    </build>
+
+</project>
