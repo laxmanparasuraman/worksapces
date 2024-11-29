@@ -125,7 +125,7 @@ public class AuthController {
 
         return  new ResponseEntity<>(response, HttpStatus.CREATED);
     }
-
+@PostMapping("/two-factor/otp/{otp}")
     private Authentication authenticate(String userName, String password) throws Exception {
 
         /*User isEmailExit=userRepository.findByEmail(user.getEmail());
@@ -145,6 +145,7 @@ public class AuthController {
         return new UsernamePasswordAuthenticationToken(userDetails,password,userDetails.getAuthorities());
 
     }
+
     public  ResponseEntity<AuthResponse> verifySigningOtp(@PathVariable String otp,@RequestParam String id ) throws Exception {
 
        TwoFactorOTP  twoFactorOTP=twoFactorOtpService.findById(id);
